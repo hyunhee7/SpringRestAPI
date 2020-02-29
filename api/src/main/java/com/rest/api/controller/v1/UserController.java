@@ -22,8 +22,9 @@ public class UserController {
     }
     @PostMapping(value = "/user")
     public User save(){
-        User user = User.builder().uid("hyunhi7@naver.com")
-                .name("hyunhee")
+        User user = User.builder()
+                .uid("hyunhi7@naver.com")
+                .name("현희")
                 .build();
         return userJpaRepo.save(user);
     }
